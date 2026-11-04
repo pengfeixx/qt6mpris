@@ -1,3 +1,13 @@
+qt6mpris (1.0.0.1-1deepin3) unstable; urgency=medium
+
+  * Rebuild against Qt 6.12: refresh libmpris-qt6 symbols
+    (QMetaType template instantiations changed in Qt 6.12:
+    qRegisterNormalizedMetaTypeImplementation / getLegacyRegister /
+    QMetaTypeIdQObject metatype_id no longer emitted, qvariant_cast
+    gained the rvalue-ref overload)
+
+ -- pengfeixx <63588879+pengfeixx@users.noreply.github.com>  Wed, 04 Nov 2026 17:56:19 +0800
+
 qt6mpris (1.0.0.1-1deepin2) unstable; urgency=medium
 
   * Enhance logging in Mpris components
